@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:padding="@dimen/layout_padding"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivNavUserProfile"
+        android:layout_width="@dimen/userNavProfileDimension"
+        android:layout_height="@dimen/userNavProfileDimension"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/layout_padding"
+        android:src="@drawable/user" />
+
+
+    <TextView
+        android:id="@+id/tvNavUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivNavUserProfile"
+        android:layout_marginTop="@dimen/layout_padding"
+        android:textColor="@color/green"
+        android:textSize="@dimen/txt_size_2" />
+
+
+</RelativeLayout>

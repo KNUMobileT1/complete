@@ -1,0 +1,60 @@
+<resources>
+    <string name="shared_prefrences">trackChild</string>
+    <string name="app_name">지키미와 이어주기</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="confirm_message">Confirm</string>
+
+    <string name="user_is_txt">User is:</string>
+    <string name="parent_txt">보호자</string>
+    <string name="child_txt">피보호자</string>
+    <string name="user_is_child_txt">보호자랑 연결 되고 있습니다 블루투스를 켜주시길 바랍니다\'s mobile</string>
+
+    <string name="device_selection_txt">Select your child\'s device</string>
+    <string name="device_scanning_txt">Scan for Devices</string>
+
+    <string name="track_child_txt">Track</string>
+    <string name="get_loc_txt">Get location by SMS</string>
+    <string name="longitude">Longitude</string>
+    <string name="latitude">Latitude  </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!--Dialog messages-->
+    <string name="dialog_save_device">Are you sure you want to save this device?</string>
+    <string name="track_is_stop">Turning Bluetooth off is stopping tracking your child</string>
+    <string name="out_of_range">your rooomate\'s Device is out of Range.Do you want to get your child location?</string>
+
+    <!--Permissions-->
+    <string name="first_deny">To use application features you must allow all permissions.Do you want continue?</string>
+    <string name="never_ask_deny">To use application features you must allow all permissions.Do you want go to setting?</string>
+   -->
+    <!--Main Activity-->
+    <string name="ParentSingUP">Parent sing up</string>
+    <string name="ChildSingUP">Child sing up</string>
+    <!--Register Activity -->
+    <string name="yourName">Your name</string>
+    <string name="childName">for protected name</string>
+    <string name="childPhone">번호를 적어주세요.</string>
+    <string name="parentName">parent name</string>
+    <string name="parentPhone">Parent phone no.</string>
+
+
+    <!-- Shared Preferences Keys -->
+    <string name="Key_ChildName">childName</string>
+    <string name="Key_ChildPhone">childPhone</string>
+    <string name="Key_ChildImage">childImage</string>
+    <string name="Key_ChildDeviceName">childDeviceName</string>
+    <string name="Key_ChildDeviceAddressMac">childDeviceAddressMac</string>
+
+    <string name="Key_ParentName">parentName</string>
+    <string name="Key_ParentPhone">parentPhone</string>
+    <string name="Key_ParentImage">parentImage</string>
+    <string name="Key_ParentDeviceName">parentDeviceName</string>
+    <string name="Key_ParentDeviceAddressMac">parentDeviceAddressMac</string>
+    <string name="Key_UserType">userType</string>
+
+    <string name="IS_CHECKED">isChecked</string>
+
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/layout_padding"
+    android:background="@color/green"
+    >
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/view_padding"
+        android:background="@drawable/button_shape"
+        android:textAllCaps="false"
+        android:text="@string/get_loc_txt"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt_size_2"
+        />
+
+    <EditText
+        android:id="@+id/edit_lon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/btn_send"
+        android:layout_marginBottom="@dimen/view_padding"
+		android:textSize="@dimen/txt_size_2"
+		android:ems="7"
+        android:enabled="false"
+        android:focusable="false"
+        android:hint="@string/longitude" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edit_lon"/>
+
+    <EditText
+        android:id="@+id/edit_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_lon"
+        android:layout_alignBottom="@+id/edit_lon"
+        android:layout_toRightOf="@+id/btn_send"
+        android:hint="@string/latitude"
+        android:ems="7"
+        android:enabled="false"
+        android:focusable="false"
+        android:textSize="@dimen/txt_size_2" />
+
+</RelativeLayout>

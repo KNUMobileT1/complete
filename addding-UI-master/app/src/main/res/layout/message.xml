@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FF6666"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:padding="@dimen/layout_padding"
+            android:text=""
+            android:textColor="#FF6666"
+            android:textSize="@dimen/txt_size_2" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/txtTitle"
+            android:background="#FF6666" />
+
+        <TextView
+            android:id="@+id/btnOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/layout_padding"
+            android:gravity="center"
+            android:layout_below="@+id/line"
+            android:text="OK"
+            android:textColor="#FF6666"
+            android:textSize="@dimen/txt_size_2" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" android:visible="false" android:id="@+id/groupChild">
+        <item android:id="@+id/nav_logout"
+            android:title="나가기" />
+    </group>
+    <group android:checkableBehavior="single" android:visible="false" android:id="@+id/groupParent">
+
+        <item android:id="@+id/nav_parentLogout"
+            android:title="나가기"
+            android:textStyle="bold"/>
+    </group>
+
+</menu>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dimensions for tablet 10  -->
+    <dimen name="layout_padding">32dp</dimen>
+    <dimen name="layout_padding2">64dp</dimen>
+    <dimen name="view_padding">16dp</dimen>
+
+    <dimen name="txt_size_1">40sp</dimen>
+    <dimen name="txt_size_2">36sp</dimen>
+
+    <dimen name="buttonWidth">800dp</dimen>
+    <dimen name="buttonHeight">128dp</dimen>
+
+    <dimen name="nav_header_height">400dp</dimen>
+    <dimen name="userProfileDimension">300dp</dimen>
+    <dimen name="userNavProfileDimension">200dp</dimen>
+</resources>

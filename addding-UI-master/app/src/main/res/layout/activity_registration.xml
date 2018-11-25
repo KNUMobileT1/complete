@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/login_screen"
+        android:padding="32dp"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:background="@drawable/edit_round"
+            android:hint="이름을 적어주세요."
+            android:inputType="text"
+            android:padding="10dp" />
+
+    <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtName"
+            android:layout_marginTop="@dimen/layout_padding"
+            android:background="@drawable/edit_round"
+            android:inputType="phone"
+            android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_button"
+        android:text="저장하기."
+        android:textColor="#FF6666"
+        android:textStyle="bold"
+        android:textSize="29sp" />
+
+</RelativeLayout>
