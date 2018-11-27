@@ -42,7 +42,7 @@ public class MyService extends Service {
             public void onShake(float force) {
                 SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
                 String phoneNumber = pref.getString("phone", "");
-                String context = "살려주세요";
+                String context = "넘어졌어요.\n보호자님 도와주세요";
 
                 SendSMS(phoneNumber, context);
 
@@ -66,6 +66,7 @@ public class MyService extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
+        ShakeIt.stopShakeService(this);
         Log.d("test1", "program exit");
     }
 

@@ -68,7 +68,7 @@ public class BatteryService extends Service {
                 break;
         }
 
-        String str = "연결: " + sPlug + "\n상태: " + sStatus + "\n 레벨" + ratio;
+        String str ="충전이 필요합니다 ";
 
         mStatus = str;
 
@@ -78,8 +78,8 @@ public class BatteryService extends Service {
         if (status == BatteryManager.BATTERY_STATUS_DISCHARGING) {
             if (ratio  != preRatio){
                 preRatio = ratio;
-                if (preRatio < 15){
-                    SendSMS(phoneNumber,"배터리 부족합니다");
+                if (preRatio < 85){
+                    SendSMS(phoneNumber,"배터리가 부족해요. \n보호자님의 도움이 필요해요");
                     Toast.makeText(getApplicationContext(), str, Toast.LENGTH_LONG).show();
                 }
             }
@@ -146,7 +146,8 @@ public class BatteryService extends Service {
     @Override
     public void onDestroy() {
 
-        unregisterReceiver(mBRBattery);
+        this.unregisterReceiver(mBRBattery);
+
         super.onDestroy();
     }
 

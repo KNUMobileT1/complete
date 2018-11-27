@@ -93,22 +93,25 @@ public class ChooseActivity extends AppCompatActivity{
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 String str=String.valueOf(isChecked);
                 // Toast.makeText(getApplicationContext(),"체크상태 = "+isChecked,Toast.LENGTH_SHORT);
+                Intent intent = new Intent(
+                        getApplicationContext(),//현재제어권자
+                        MyService.class); // 이동할 컴포넌트
 
                 if(isChecked){
                     Toast.makeText(getApplicationContext(),"on",Toast.LENGTH_SHORT).show();
                     Log.d("test","on");
-                    Intent intent = new Intent(
+                    /*Intent intent = new Intent(
                             getApplicationContext(),//현재제어권자
-                            MyService.class); // 이동할 컴포넌트
+                            MyService.class); // 이동할 컴포넌트*/
                     startService(intent); // 서비스 시작
 
 
                 }
                 else{
                     Toast.makeText(getApplicationContext(),"off",Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(
-                            getApplicationContext(),//현재제어권자
-                            MyService.class); // 이동할 컴포넌트
+//                    Intent intent = new Intent(
+//                            getApplicationContext(),//현재제어권자
+//                            MyService.class); // 이동할 컴포넌트
                     stopService(intent); // 서비스 종료
                 }
             }
