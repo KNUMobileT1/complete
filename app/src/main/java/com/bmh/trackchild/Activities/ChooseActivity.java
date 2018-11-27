@@ -47,6 +47,7 @@ public class ChooseActivity extends AppCompatActivity{
                         getApplicationContext(),//현재제어권자
                         RegistrationActivity.class); // 이동할 컴포넌트
                 startActivity(intent);
+                finish();
             }
         });
 

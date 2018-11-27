@@ -41,13 +41,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         sharedPrefs = new SharedPrefs(this);
         //check if user had registered before or not
-        if (checkRegistration()) {
-            identifyUser();
-        } else {
             setContentView(R.layout.activity_main);
             appPermission = new AppPermission(this);
             initComponent();
-        }
+//        if (checkRegistration()) {
+//            identifyUser();
+//        } else {
+//            setContentView(R.layout.activity_main);
+//            appPermission = new AppPermission(this);
+//            initComponent();
+//        }
 
 
     }
