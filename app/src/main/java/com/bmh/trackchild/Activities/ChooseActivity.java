@@ -28,6 +28,7 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 public class ChooseActivity extends AppCompatActivity{
     Intent intent;
     Switch swc1,swc2,swc3;
+    Button bef;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +36,19 @@ public class ChooseActivity extends AppCompatActivity{
         swc1 = (Switch) findViewById(R.id.switch1);
         swc2 = (Switch) findViewById(R.id.switch2);
         swc3 = (Switch) findViewById(R.id.switch3);
+        bef=(Button) findViewById(R.id.before);
 
+
+        bef.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(
+                        getApplicationContext(),//현재제어권자
+                        RegistrationActivity.class); // 이동할 컴포넌트
+                startActivity(intent);
+            }
+        });
 
 
 
